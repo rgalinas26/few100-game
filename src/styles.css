@@ -1,3 +1,25 @@
-h1 {
-    color:red;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.square {
+    width: 28.81%;
+    background-color: purple;
+    padding-bottom: 28.81%;
+    float: left;
+    margin: 2.2%;
+    border-radius: 18.9%;
+    transition: background-color 0.8s;
+    transition: border-radius 0.8s; /* this line and above say- if additional css is applied to this element take 0.8s to do this */
+}
+
+.square.winner {
+    background-color: gold;
+    border-radius: 40%;
+}
+
+.square.loser{
+    background-color: grey;
+    border-radius: 40%;
 }
